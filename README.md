@@ -1,4 +1,4 @@
-# Forex Rates As Promised
+# Forex Rates
 [![NPM Version](https://badge.fury.io/js/theforexapi_001.svg)](https://badge.fury.io/js/theforexapi_001.svg)
 [![Build Status](https://travis-ci.org/ToeFungi/forex-rates.svg?branch=master)](https://travis-ci.org/ToeFungi/forex-rates)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=apiforfun_forexrates-nodejs&metric=alert_status)](https://sonarcloud.io/dashboard?id=forex-rates)
