@@ -1,0 +1,40 @@
+language: node_js
+
+node_js:
+  - '12'
+
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
+    - 'node_modules'
+    - 'coverage'
+    - 'dist'
+
+stages:
+  - setup
+  - quality
+  - build
+
+jobs:
+  include:
+    - stage: setup
+      script:
+        - npm i
+
+    - stage: quality
+      script: npm audit
+      name: audit
+    - script: npm run lint
+      name: lint
+    - script: npm run coverage
+      name: coverage
+    - script: sonar-scanner
+      name: sonar
+      addons:
+        sonarcloud:
+          organization: "coolfire1231"
+          token: "tLOn7nIcaO/20wi05OmSLsc4MI4VZ3/Y985UEmVi2C1GzFBsPXAO0BICobj/gFOobtWGuizCxgaKY9uLFAt084g64avuQb5qd5hsIbClFeNQy9ZkqKU0zF1d9WHclUNT1gWhDms6Ewjb6iwpB884bIpHeZdGUsCLJb7QrY+5ll+CUrESQKdnB+BwUHdO21VBJS4cY14GRGg5HZOYZ7kFTLlvLN6kA1ouylPzFxJUibbF3gTDKaY6V+0Bo0oOs/oWBDWTz9o2X+xSZ460RxyV8XrM8FFUSaTpk1ihsrxoo9aGeDaF03jwfygDLqZSPgl+FcuUyTNvgkno9RLvz0+g8D4D67VdZXIGQ81Cx4VRH29WXaFT4MG4j90nhnalMfsnb5MkoIh8bhlEa116yrFsH3mTbf1OVCtXAVrKbmX+adKpRoYMBMLXu/yvoKO4OnOlyYo8OhFqOmdfod+0mpany4YdNn05QqIftMZYLm6sE+9VzohIF18BkfdefVnQ/vLfNlNyj6tPelVUFBkzzeQjV7TxIYzAtsBukRsXvvSDUJLHKJPmXGLRzMXF5gtV5+gegsC7v3HoEUAB4Gr6LFcQmCKFhybtzq1EHuaBZzmFRZ04zu0dRHSSn8x3qn4K+PD9aXmGFg6f/PHBXYo0MQBSr2/HbZuAVySUod/JatSXU9A="
+
+    - stage: build
+      script:
+        - npm run build

@@ -1,0 +1,71 @@
+{
+  "name": "forex-rates",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "Exchange rates API client which provides easy to use functions for exchanging currencies",
+  "scripts": {
+    "build": "webpack",
+    "test": "mocha",
+    "coverage": "nyc --reporter=lcov mocha",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "integration": "ts-node test/integration/index.spec.ts"
+  },
+  "files": [
+    "dist",
+    "test",
+    "LICENSE",
+    ".nycrc.json",
+    ".mocharc.js",
+    "tslint.json",
+    "tsconfig.json"
+  ],
+  "keywords": [
+    "API",
+    "Rates",
+    "Forex",
+    "Client",
+    "Promise",
+    "Restful",
+    "Exchange",
+    "Currency",
+    "Conversion",
+    "Currencies",
+    "Foreign Exchange"
+  ],
+  "author": {
+    "name": "coolfire1231",
+    "url": "https://github.com/apiforfun/",
+    "email": "theforexapi@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apiforfun/forexrates-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apiforfun/forexrates-nodejs/issues"
+  },
+  "homepage": "https://github.com/apiforfun/forexrates-nodejs",
+  "dependencies": {
+    "axios": "0.21.1"
+  },
+  "devDependencies": {
+    "@types/chai": "4.2.11",
+    "@types/chai-as-promised": "7.1.2",
+    "@types/mocha": "7.0.2",
+    "@types/node": "14.0.1",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "mocha": "7.1.2",
+    "nock": "12.0.3",
+    "nyc": "15.0.1",
+    "ts-loader": "6.2.1",
+    "ts-node": "8.10.1",
+    "tslint": "6.1.2",
+    "tslint-config-standard": "9.0.0",
+    "typescript": "3.9.2",
+    "webpack": "4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
