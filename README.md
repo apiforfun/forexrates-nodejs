@@ -1,8 +1,5 @@
 # Forex Rates
-[![NPM Version](https://badge.fury.io/js/theforexapi_001.svg)](https://badge.fury.io/js/theforexapi_001.svg)
-[![Build Status](https://travis-ci.org/ToeFungi/forex-rates.svg?branch=master)](https://travis-ci.org/ToeFungi/forex-rates)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=apiforfun_forexrates-nodejs&metric=alert_status)](https://sonarcloud.io/dashboard?id=forex-rates)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=apiforfun_forexrates-nodejs&metric=coverage)](https://sonarcloud.io/dashboard?id=apiforfun_forexrates-nodejs)
+[![NPM Version](https://badge.fury.io/js/forex-rates.svg)](https://badge.fury.io/js/forex-rates.svg)
 
 This is an unofficial client for the [Forex Rates API](https://theforexapi.com/) and provides easy to use and 
 implement, promise based functionality to retrieve forex rates including historical data from the API and return it
