@@ -198,5 +198,3 @@ functionality.
 
 ## License
 MIT License
-
-Copyright (c) 2021 CoolFire1231 Pickering
